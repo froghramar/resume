@@ -264,21 +264,7 @@
                     {% if exp.employment_type or (exp.roles and exp.roles|length > 1) %}
                     <span style="color:#888; font-size:0.95em; margin-top:2px;">
                         {% if exp.employment_type %}{{ exp.employment_type }}{% endif %}
-                        {% if exp.roles and exp.roles|length > 1 %}
-                            {# Robust inclusive calculation for total experience #}
-                            {% set start = exp.roles[-1].start %}
-                            {% set end = exp.roles[0].end %}
-                            {% if start and end %}
-                                {% set start_year = start.split('-')[0] | int %}
-                                {% set start_month = start.split('-')[1] | int %}
-                                {% set end_year = end.split('-')[0] | int %}
-                                {% set end_month = end.split('-')[1] | int %}
-                                {% set total_months = (end_year - start_year) * 12 + (end_month - start_month) + 1 %}
-                                {% set years = (total_months // 12) %}
-                                {% set months = (total_months % 12) %}
-                                &nbsp;•&nbsp;{{ years }} year{% if years != 1 %}s{% endif %}{% if months > 0 %} {{ months }} month{% if months > 1 %}s{% endif %}{% endif %}
-                            {% endif %}
-                        {% endif %}
+                        {{ format_duration(exp.roles[-1].start, exp.roles[0].end) }}
                     </span>
                     {% endif %}
                 </div>
@@ -341,17 +327,7 @@
                         {% endif %}
                     </span>
                     <span style="color:#888; font-size:0.95em; margin-bottom:2px;">
-                        {{ exp.start }} – {{ exp.end }}
-                        {% if exp.start and exp.end %}
-                            {% set start_year = exp.start.split('-')[0] | int %}
-                            {% set start_month = exp.start.split('-')[1] | int %}
-                            {% set end_year = exp.end.split('-')[0] | int %}
-                            {% set end_month = exp.end.split('-')[1] | int %}
-                            {% set total_months = (end_year - start_year) * 12 + (end_month - start_month) + 1 %}
-                            {% set years = (total_months // 12) %}
-                            {% set months = (total_months % 12) %}
-                            &nbsp;•&nbsp;{{ years }} year{% if years != 1 %}s{% endif %}{% if months > 0 %} {{ months }} month{% if months > 1 %}s{% endif %}{% endif %}
-                        {% endif %}
+                        {{ exp.start }} – {{ exp.end }}{{ format_duration(exp.start, exp.end) }}
                     </span>
                     {% if exp.location %}
                     <span class="exp-location" style="margin-top:2px; color:#888;">{{ exp.location }}</span>
