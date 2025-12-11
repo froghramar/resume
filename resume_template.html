@@ -290,22 +290,22 @@
                 {% if exp.company_image %}
                 <img src="{{ exp.company_image }}" alt="{{ exp.company }} logo" style="width:32px;height:32px;border-radius:6px;object-fit:contain;background:#fff;border:1px solid #e3eaf3;box-shadow:0 1px 4px rgba(42,122,226,0.08);">
                 {% endif %}
-                <div style="display:flex; flex-direction:column;">
-                    <span class="exp-title">{{ exp.title }}</span>
-                    <span class="exp-company">
-                        {% if exp.company_website %}
-                        <a href="{{ exp.company_website }}" target="_blank">{{ exp.company }}</a>
-                        {% else %}
-                        {{ exp.company }}
-                        {% endif %}
-                        {% if exp.location %}<span class="exp-location">, {{ exp.location }}</span>{% endif %}
-                    </span>
+                <div style="flex:1; display:flex; justify-content:space-between; align-items:center;">
+                    <div style="display:flex; flex-direction:column;">
+                        <span class="exp-title">{{ exp.title }}</span>
+                        <span class="exp-company">
+                            {% if exp.company_website %}
+                            <a href="{{ exp.company_website }}" target="_blank">{{ exp.company }}</a>
+                            {% else %}
+                            {{ exp.company }}
+                            {% endif %}
+                            {% if exp.location %}<span class="exp-location">, {{ exp.location }}</span>{% endif %}
+                        </span>
+                    </div>
+                    <span class="exp-dates">{{ exp.start }} – {{ exp.end }}</span>
                 </div>
             </div>
             <div style="margin-top:8px; margin-left:44px;"> <!-- aligns with company name, not image -->
-                <div style="display:flex; justify-content:space-between; align-items:center;">
-                    <span class="exp-dates">{{ exp.start }} – {{ exp.end }}</span>
-                </div>
                 <div>{{ exp.description }}</div>
                 {% if exp.highlights %}
                 <ul class="exp-highlights">
