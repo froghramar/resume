@@ -4,15 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume - Feroz Ahmmed</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>
         body { font-family: 'Roboto', Arial, sans-serif; background: #f4f8fb; margin: 0; }
         .container { max-width: 900px; margin: 40px auto; background: #fff; border-radius: 16px; box-shadow: 0 4px 24px rgba(0,0,0,0.08); padding: 32px; }
         .download-btn { display: inline-block; margin: 24px 0 16px 0; padding: 12px 28px; background: #2a7ae2; color: #fff; border: none; border-radius: 6px; font-size: 1.1em; font-weight: bold; text-decoration: none; transition: background 0.2s; }
         .download-btn:hover { background: #195ca7; }
         iframe { width: 100%; min-height: 600px; border: none; border-radius: 8px; box-shadow: 0 2px 8px rgba(42,122,226,0.08); background: #fff; display: block; }
+        nav {
+            display: flex;
+            flex-wrap: nowrap;
+            width: 100%;
+            max-width: 42rem;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 2rem;
+        }
+        .nav-links {
+            margin-left: -0.6rem;
+        }
+        .nav-links > a {
+            text-decoration: none;
+            padding: 0.5rem 0.75rem;
+            transition-property: all;
+            transition-timing-function: cubic-bezier(.4,0,.2,1);
+            transition-duration: .15s;
+        }
+        .justified {
+            padding-left: 2rem;
+            padding-right: 2rem;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+        }
     </style>
 </head>
 <body>
+    <div class="justified">
+        <nav>
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/resume">Resume</a>
+                <a href="https://froghramar.com" target="_blank">
+                    Blog <span style="font-size: inherit;" class="material-icons">open_in_new</span>
+                </a>
+            </div>
+        </nav>
+    </div>
     <a class="download-btn" href="resume.pdf" download style="display:block; margin: 40px auto 24px auto; text-align:center;">Download PDF</a>
     <iframe id="resumeFrame" src="resume.html" title="Resume" scrolling="no" style="display:block; margin:0 auto 40px auto; max-width:900px; width:100%; background:#fff; border-radius:16px; box-shadow:0 4px 24px rgba(0,0,0,0.08);"></iframe>
         <script>
