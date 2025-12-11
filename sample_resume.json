@@ -16,6 +16,13 @@
       "year": "2017",
       "logo": "assets/du_logo.svg",
       "website": "https://www.du.ac.bd"
+    },
+    {
+      "degree": "Higher Secondary Certificate (HSC)",
+      "institution": "Pirganj Govt. College",
+      "year": "2013",
+      "logo": "assets/pirganj_govt_college_logo.jpg",
+      "website": "https://www.pirganjgc.edu.bd"
     }
   ],
   "experience": [
