@@ -23,6 +23,7 @@
       "title": ".NET Developer",
       "company": "Toptal",
       "location": "Chicago, Illinois, United States (Remote)",
+      "employment_type": "Contract",
       "start": "2022-03",
       "end": "2025-06",
       "description": "Contributed to the modernization of a mission-critical legacy application for a Fortune 100 North American construction equipment manufacturer.",
@@ -42,6 +43,7 @@
     },
     {
       "company": "SELISE Group",
+      "employment_type": "Full-time",
       "company_image": "assets/selise_logo.jpg",
       "company_website": "https://selisegroup.com",
       "roles": [
@@ -85,6 +87,7 @@
       "title": "Full Stack Developer",
       "company": "Loence Solution",
       "location": "Dhaka, Bangladesh",
+      "employment_type": "Full-time",
       "start": "2019-01",
       "end": "2019-03",
       "description": "Contributed to the development of a comprehensive ERP software solution at a startup.",
@@ -104,6 +107,7 @@
       "title": "Angular Developer",
       "company": "SELISE Group",
       "location": "Dhaka, Bangladesh",
+      "employment_type": "Full-time",
       "start": "2018-01",
       "end": "2019-01",
       "description": "Developed a comprehensive project management tool using TypeScript and Angular.",
@@ -119,9 +123,10 @@
       "company_website": "https://selisegroup.com"
     },
     {
-      "title": "AngularJS Developer (Internship)",
+      "title": "AngularJS Developer",
       "company": "SELISE Group",
       "location": "Dhaka, Bangladesh",
+      "employment_type": "Internship",
       "start": "2017-01",
       "end": "2017-06",
       "description": "Developed responsive and dynamic user interfaces using JavaScript and AngularJS.",

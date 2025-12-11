@@ -248,6 +248,9 @@
                     {{ exp.company }}
                     {% endif %}
                 </span>
+                {% if exp.employment_type %}
+                <span style="color:#888; font-size:0.95em; margin-left:12px;">{{ exp.employment_type }}</span>
+                {% endif %}
             </div>
             <div style="margin-top:10px; margin-left:12px;">
                 {% for role in exp.roles %}
@@ -299,8 +302,13 @@
                             {% else %}
                             {{ exp.company }}
                             {% endif %}
-                            {% if exp.location %}<span class="exp-location">, {{ exp.location }}</span>{% endif %}
+                            {% if exp.employment_type %}
+                            <span style="color:#888; font-size:0.95em; margin-left:8px;">{{ exp.employment_type }}</span>
+                            {% endif %}
                         </span>
+                        {% if exp.location %}
+                        <span class="exp-location" style="margin-top:2px; color:#888;">{{ exp.location }}</span>
+                        {% endif %}
                     </div>
                     <span class="exp-dates">{{ exp.start }} – {{ exp.end }}</span>
                 </div>
