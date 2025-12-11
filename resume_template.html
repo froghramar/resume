@@ -264,7 +264,7 @@
                             <span class="exp-title">{{ role.title }}</span>
                             <span class="exp-dates">{{ role.start }} – {{ role.end }}</span>
                         </div>
-                        <div class="exp-role-content-bordered">
+                        <div {% if not loop.last %}class="exp-role-content-bordered"{% endif %}>
                             {% if role.location %}<div class="exp-location">{{ role.location }}</div>{% endif %}
                             <div style="margin-top:6px;">{{ role.description }}</div>
                             {% if role.highlights %}
