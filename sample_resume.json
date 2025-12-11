@@ -1,92 +1,198 @@
 {
-  "name": "Jane Doe",
+  "name": "Feroz Ahmmed",
+  "profile_picture": "profile.jpg",
+  "headline": "Senior Software Engineer | Building High-Performance Web Applications with .NET Core & Azure | 3x Microsoft Certified",
   "contact": {
-    "email": "jane.doe@example.com",
-    "phone": "+1-555-123-4567",
-    "address": "123 Main St, Springfield, USA"
+    "email": "froghramar@gmail.com",
+    "phone": "+880-152-1498748",
+    "address": "Thakurgaon, Rangpur Division, Bangladesh",
+    "website": "https://feroz.dev",
+    "linkedin": "https://linkedin.com/in/froghramar"
   },
-  "summary": "Experienced software engineer with a passion for developing innovative programs that expedite the efficiency and effectiveness of organizational success.",
+  "summary": "I'm a seasoned web application developer with a proven track record of delivering high-impact solutions across the entire technology stack. I specialize in .NET Core and C# development, with deep expertise in building scalable microservices using modern architectural patterns. My commitment to excellence is backed by formal education from the University of Dhaka and industry-recognized Microsoft certifications. I thrive in fast-paced environments where I can make an immediate impact, mentor others, and continuously push the boundaries of what's possible with modern cloud technologies.",
+  "open_to_work": [
+    "Dotnet Developer",
+    "Senior Dotnet Developer",
+    ".NET Engineer",
+    ".NET Developer"
+  ],
+  "open_to_volunteer": [
+    "Child Welfare",
+    "Disaster and Humanitarian Relief",
+    "Economic Empowerment",
+    "Education",
+    "Environmental Sustainability",
+    "Health - General and Rehabilitative",
+    "Human Rights",
+    "Poverty Alleviation",
+    "Science and Technology"
+  ],
+  "analytics": {
+    "profile_views": 97,
+    "post_impressions": 144,
+    "search_appearances": 7
+  },
   "education": [
     {
-      "degree": "B.Sc. Computer Science",
-      "institution": "Springfield University",
-      "year": "2020"
-    },
-    {
-      "degree": "M.Sc. Artificial Intelligence",
-      "institution": "Tech Valley Institute",
-      "year": "2023"
+      "degree": "Bachelor of Science in Software Engineering",
+      "institution": "University of Dhaka",
+      "year": "2017"
     }
   ],
   "experience": [
     {
-      "title": "Software Engineer",
-      "company": "Tech Solutions Inc.",
-      "start": "2021-01",
-      "end": "2025-12",
-      "description": "Developed and maintained web applications using JavaScript, Python, and React.",
+      "title": ".NET Developer",
+      "company": "Toptal",
+      "location": "Chicago, Illinois, United States (Remote)",
+      "start": "2022-03",
+      "end": "2025-06",
+      "description": "Contributed to the modernization of a mission-critical legacy application for a Fortune 100 North American construction equipment manufacturer.",
       "highlights": [
-        "Led a team of 5 engineers to deliver a major product release ahead of schedule.",
-        "Implemented CI/CD pipelines, reducing deployment time by 40%.",
-        "Optimized database queries, improving app performance by 30%."
-      ]
+        "Migrated from .NET Framework to .NET Core.",
+        "Redesigned and optimized the database schema to align with evolving business requirements.",
+        "Developed high-performance solutions for data-intensive operations.",
+        "Authored complex SQL Server stored procedures to optimize data import and ingestion.",
+        "Implemented performance tuning strategies including query optimization, indexing, and caching.",
+        "Collaborated with business stakeholders and subject matter experts.",
+        "Conducted thorough performance testing and profiling.",
+        "Participated in code reviews and knowledge-sharing sessions."
+      ],
+      "skills": [".NET", "Entity Framework", "SQL Server", "Performance Tuning"]
     },
     {
-      "title": "AI Research Intern",
-      "company": "InnovateAI Labs",
-      "start": "2020-06",
-      "end": "2020-12",
-      "description": "Worked on natural language processing models and contributed to open-source AI projects.",
+      "title": "Senior .NET Developer",
+      "company": "SELISE Group",
+      "location": "Dhaka, Bangladesh (Remote)",
+      "start": "2021-05",
+      "end": "2022-05",
+      "description": "Led and mentored a team of 10 developers, providing technical guidance, code reviews, and best practices.",
       "highlights": [
-        "Published a paper on sentiment analysis in a peer-reviewed journal.",
-        "Developed a chatbot demo for a major client presentation.",
-        "Collaborated with a cross-functional team on multilingual NLP."
-      ]
+        "Onboarded and trained new team members on microservices architecture.",
+        "Spearheaded migration of multiple microservices to newer .NET versions.",
+        "Implemented comprehensive monitoring and observability solutions.",
+        "Established logging and monitoring best practices.",
+        "Architected and maintained distributed tracing and centralized logging infrastructure.",
+        "Collaborated with stakeholders to define technical roadmaps.",
+        "Conducted technical training sessions and knowledge-sharing workshops."
+      ],
+      "skills": [".NET", "Azure DevOps", "Microservices", "Application Insights", "ElasticSearch", "Kibana", "Seq"]
     },
     {
-      "title": "Freelance Web Developer",
-      "company": "Self-Employed",
-      "start": "2019-03",
-      "end": "2020-05",
-      "description": "Built custom websites for small businesses using WordPress and JavaScript.",
+      "title": ".NET Developer",
+      "company": "SELISE Group",
+      "location": "Hybrid",
+      "start": "2019-04",
+      "end": "2021-05",
+      "description": "Served as the primary developer, leading the development of a significant portion of the application using C# and .NET Core.",
       "highlights": [
-        "Delivered 10+ websites with custom features for local businesses.",
-        "Provided SEO consulting, increasing client traffic by up to 50%.",
-        "Trained clients on website maintenance and content updates."
-      ]
+        "Designed and developed microservices architecture (DDD, CQRS, Event Sourcing).",
+        "Implemented serverless solutions using Azure Functions.",
+        "Containerized microservices with Docker and orchestrated deployments using Kubernetes.",
+        "Built and maintained CI/CD pipelines using Azure DevOps.",
+        "Leveraged Azure CosmosDB as the event store and data persistence layer.",
+        "Implemented event-driven architecture for asynchronous communication.",
+        "Configured Kubernetes deployments with auto-scaling policies and health checks."
+      ],
+      "skills": [".NET Core", "Azure Functions", "Docker", "Kubernetes", "CosmosDB", "CI/CD"]
+    },
+    {
+      "title": "Full Stack Developer",
+      "company": "Loence Solution",
+      "location": "Dhaka, Bangladesh",
+      "start": "2019-01",
+      "end": "2019-03",
+      "description": "Contributed to the development of a comprehensive ERP software solution at a startup.",
+      "highlights": [
+        "Worked across the full stack with Node.js, TypeScript, Angular, and MongoDB.",
+        "Led development efforts on the Human Resource Management (HRM) module.",
+        "Built RESTful APIs using Node.js and TypeScript.",
+        "Designed and implemented responsive Angular components.",
+        "Architected MongoDB database schemas.",
+        "Collaborated closely with stakeholders in a fast-paced startup environment."
+      ],
+      "skills": ["Node.js", "TypeScript", "Angular", "MongoDB"]
+    },
+    {
+      "title": "Angular Developer",
+      "company": "SELISE Group",
+      "location": "Dhaka, Bangladesh",
+      "start": "2018-01",
+      "end": "2019-01",
+      "description": "Developed a comprehensive project management tool using TypeScript and Angular.",
+      "highlights": [
+        "Designed and implemented interactive data visualizations and charts.",
+        "Built scalable front-end architecture with Angular components.",
+        "Created dynamic dashboards for project analytics.",
+        "Collaborated with team members to gather requirements and iterate on UI/UX designs.",
+        "Utilized TypeScript to write type-safe, maintainable code."
+      ],
+      "skills": ["Angular", "TypeScript", "MongoDB", "Data Visualization"]
+    },
+    {
+      "title": "AngularJS Developer (Internship)",
+      "company": "SELISE Group",
+      "location": "Dhaka, Bangladesh",
+      "start": "2017-01",
+      "end": "2017-06",
+      "description": "Developed responsive and dynamic user interfaces using JavaScript and AngularJS.",
+      "highlights": [
+        "Built reusable components and implemented complex front-end functionality.",
+        "Collaborated with senior developers and cross-functional teams.",
+        "Debugged and optimized existing code.",
+        "Gained hands-on experience with modern web development practices."
+      ],
+      "skills": ["JavaScript", "AngularJS"]
     }
   ],
-  "skills": ["JavaScript", "Python", "React", "Node.js", "SQL", "TensorFlow", "Docker", "WordPress", "HTML", "CSS", "Git"],
+  "skills": [
+    ".NET Core", "C#", "Microsoft Azure", "Angular", "LangChain", "Entity Framework", "SQL Server", "Docker", "Kubernetes", "Azure DevOps", "CosmosDB", "CI/CD", "TypeScript", "Node.js", "MongoDB", "Data Visualization", "JavaScript", "AngularJS"
+  ],
   "certifications": [
     {
-      "name": "AWS Certified Solutions Architect",
-      "issuer": "Amazon Web Services",
-      "year": "2024"
+      "name": "Microsoft Certified: Azure Administrator Associate",
+      "issuer": "Microsoft",
+      "year": "2022",
+      "expires": "2026"
     },
     {
-      "name": "Certified Scrum Master",
-      "issuer": "Scrum Alliance",
-      "year": "2022"
+      "name": "Microsoft Certified: Azure Fundamentals",
+      "issuer": "Microsoft",
+      "year": "2020"
+    },
+    {
+      "name": "Microsoft Certified: Azure Developer Associate",
+      "issuer": "Microsoft",
+      "year": "2021"
     }
   ],
   "languages": [
-    {"language": "English", "proficiency": "Native"},
-    {"language": "Spanish", "proficiency": "Professional"},
-    {"language": "German", "proficiency": "Conversational"}
+    {"language": "Bengali", "proficiency": "Native or bilingual"},
+    {"language": "English", "proficiency": "Professional"},
+    {"language": "Arabic", "proficiency": "Elementary"}
   ],
   "volunteer": [
     {
-      "role": "Mentor",
-      "organization": "Code for Good",
-      "year": "2023",
-      "description": "Mentored high school students in Python and web development."
-    },
-    {
-      "role": "Event Organizer",
-      "organization": "Springfield Tech Meetup",
-      "year": "2022",
-      "description": "Organized monthly meetups for local tech professionals."
+      "role": "IT Secretary",
+      "organization": "IIT Software Engineers' Community",
+      "year": "2017-2018",
+      "description": "Collaborated with software industry of Bangladesh by merging academic excellence with industrial career success."
     }
   ],
-  "profile_picture": "profile.jpg"
+  "featured": [
+    {
+      "type": "link",
+      "title": "I Built an AI Agent That Actually Searches LinkedIn Jobs For You (And It’s Open Source!)",
+      "url": "https://feroz.dev/ai-agent-linkedin-jobs"
+    },
+    {
+      "type": "link",
+      "title": "How I get into toptal!",
+      "url": "https://feroz.dev/how-i-got-into-toptal"
+    },
+    {
+      "type": "link",
+      "title": "What is it like working at Toptal as a freelancer",
+      "url": "https://feroz.dev/working-at-toptal"
+    }
+  ]
 }
