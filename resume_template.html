@@ -140,17 +140,21 @@
     <div class="headline">{{ headline }}</div>
     {% endif %}
     <div class="contact-info">
-        <div class="contact-item"><span class="icon">✉️</span>{{ contact.email }}</div>
-        <div class="contact-item"><span class="icon">📞</span>{{ contact.phone }}</div>
+        <div class="contact-item"><span class="icon">✉️</span><a href="mailto:{{ contact.email }}">{{ contact.email }}</a></div>
+        <div class="contact-item"><span class="icon">📞</span><a href="tel:{{ contact.phone }}">{{ contact.phone }}</a></div>
         <div class="contact-item"><span class="icon">📍</span>{{ contact.address }}</div>
-        {% if contact.linkedin %}<div class="contact-item"><span class="icon">🔗</span><a href="{{ contact.linkedin }}">LinkedIn</a></div>{% endif %}
+        {% if contact.linkedin %}<div class="contact-item"><span class="icon">🔗</span><a href="{{ contact.linkedin }}">{{ contact.linkedin }}</a></div>{% endif %}
         {% if education and education[0] %}
         <div class="contact-item">
             {% if education[0].logo %}
             <img src="{{ education[0].logo }}" alt="{{ education[0].institution }} logo" style="width:20px;height:20px;border-radius:4px;object-fit:contain;background:#fff;border:1px solid #e3eaf3;margin-right:6px;vertical-align:middle;">
             {% endif %}
             <span style="margin-right:6px;"></span>
+            {% if education[0].website %}
+            <a href="{{ education[0].website }}" target="_blank">{{ education[0].institution }}</a>
+            {% else %}
             {{ education[0].institution }}
+            {% endif %}
         </div>
         {% endif %}
     </div>
