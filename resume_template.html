@@ -5,6 +5,41 @@
     <title>{{ name }} - Resume</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,500" rel="stylesheet">
     <style>
+        .exp-role-timeline {
+            display: flex;
+            align-items: flex-start;
+        }
+        .exp-role-timeline-marker {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 10px;
+            position: relative;
+            min-width: 10px;
+        }
+        .exp-role-circle {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #2a7ae2;
+            border: 2px solid #fff;
+            box-shadow: 0 0 0 1.5px #2a7ae2;
+            z-index: 1;
+            margin-top: 4px;
+        }
+        .exp-role-line {
+            width: 2px;
+            flex: 1 1 auto;
+            background: #2a7ae2;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .exp-role-promotion {
+            border-left: 4px solid #2a7ae2;
+            padding-left: 18px;
+            margin-left: 8px;
+            background: #f6faff;
+        }
         body {
             font-family: 'Roboto', Arial, sans-serif;
             margin: 0;
@@ -103,12 +138,9 @@
             margin-bottom: 10px;
         }
         .exp-card {
-            border: 1px solid #e3eaf3;
             border-radius: 8px;
             padding: 16px;
             margin-bottom: 16px;
-            background: #f9fbfd;
-            box-shadow: 0 2px 8px rgba(42,122,226,0.05);
         }
         .exp-title {
             font-size: 1.2em;
@@ -212,26 +244,36 @@
                 </span>
             </div>
             <div style="margin-top:10px;">
-                {% for role in exp.roles %}
-                <div style="margin-bottom:18px;">
-                    <div style="display:flex;justify-content:space-between;align-items:center;">
-                        <span class="exp-title">{{ role.title }}</span>
-                        <span class="exp-dates">{{ role.start }} – {{ role.end }}</span>
-                    </div>
-                    {% if role.location %}<div class="exp-location">{{ role.location }}</div>{% endif %}
-                    <div style="margin-top:6px;">{{ role.description }}</div>
-                    {% if role.highlights %}
-                    <ul class="exp-highlights">
-                        {% for h in role.highlights %}
-                        <li>{{ h }}</li>
-                        {% endfor %}
-                    </ul>
-                    {% endif %}
-                    {% if role.skills %}
-                    <div class="exp-skills"><span class="label">Skills:</span> {{ role.skills | join(", ") }}</div>
-                    {% endif %}
-                </div>
-                {% endfor %}
+                                {% for role in exp.roles %}
+                                <div style="margin-bottom:18px;">
+                                    <div class="exp-role-timeline">
+                                        <div class="exp-role-timeline-marker">
+                                            <div class="exp-role-circle"></div>
+                                            {% if not loop.last %}
+                                            <div class="exp-role-line"></div>
+                                            {% endif %}
+                                        </div>
+                                        <div style="flex:1;">
+                                            <div style="display:flex;justify-content:space-between;align-items:center;">
+                                                <span class="exp-title">{{ role.title }}</span>
+                                                <span class="exp-dates">{{ role.start }} – {{ role.end }}</span>
+                                            </div>
+                                            {% if role.location %}<div class="exp-location">{{ role.location }}</div>{% endif %}
+                                            <div style="margin-top:6px;">{{ role.description }}</div>
+                                            {% if role.highlights %}
+                                            <ul class="exp-highlights">
+                                                {% for h in role.highlights %}
+                                                <li>{{ h }}</li>
+                                                {% endfor %}
+                                            </ul>
+                                            {% endif %}
+                                            {% if role.skills %}
+                                            <div class="exp-skills"><span class="label">Skills:</span> {{ role.skills | join(", ") }}</div>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                </div>
+                                {% endfor %}
             </div>
         </div>
         {% else %}
