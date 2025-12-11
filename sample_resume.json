@@ -34,7 +34,9 @@
         "Conducted thorough performance testing and profiling.",
         "Participated in code reviews and knowledge-sharing sessions."
       ],
-      "skills": [".NET", "Entity Framework", "SQL Server", "Performance Tuning"]
+      "skills": [".NET", "Entity Framework", "SQL Server", "Performance Tuning"],
+      "company_image": "assets/toptal_logo.jpg",
+      "company_website": "https://www.toptal.com/resume/feroz-ahmmed"
     },
     {
       "title": "Senior .NET Developer",
@@ -52,7 +54,9 @@
         "Collaborated with stakeholders to define technical roadmaps.",
         "Conducted technical training sessions and knowledge-sharing workshops."
       ],
-      "skills": [".NET", "Azure DevOps", "Microservices", "Application Insights", "ElasticSearch", "Kibana", "Seq"]
+      "skills": [".NET", "Azure DevOps", "Microservices", "Application Insights", "ElasticSearch", "Kibana", "Seq"],
+      "company_image": "assets/selise_logo.jpg",
+      "company_website": "https://selisegroup.com"
     },
     {
       "title": ".NET Developer",
@@ -70,7 +74,9 @@
         "Implemented event-driven architecture for asynchronous communication.",
         "Configured Kubernetes deployments with auto-scaling policies and health checks."
       ],
-      "skills": [".NET Core", "Azure Functions", "Docker", "Kubernetes", "CosmosDB", "CI/CD"]
+      "skills": [".NET Core", "Azure Functions", "Docker", "Kubernetes", "CosmosDB", "CI/CD"],
+      "company_image": "assets/selise_logo.jpg",
+      "company_website": "https://selisegroup.com"
     },
     {
       "title": "Full Stack Developer",
@@ -87,7 +93,9 @@
         "Architected MongoDB database schemas.",
         "Collaborated closely with stakeholders in a fast-paced startup environment."
       ],
-      "skills": ["Node.js", "TypeScript", "Angular", "MongoDB"]
+      "skills": ["Node.js", "TypeScript", "Angular", "MongoDB"],
+      "company_image": "assets/loence_logo.jpg",
+      "company_website": null
     },
     {
       "title": "Angular Developer",
@@ -103,7 +111,9 @@
         "Collaborated with team members to gather requirements and iterate on UI/UX designs.",
         "Utilized TypeScript to write type-safe, maintainable code."
       ],
-      "skills": ["Angular", "TypeScript", "MongoDB", "Data Visualization"]
+      "skills": ["Angular", "TypeScript", "MongoDB", "Data Visualization"],
+      "company_image": "assets/selise_logo.jpg",
+      "company_website": "https://selisegroup.com"
     },
     {
       "title": "AngularJS Developer (Internship)",
@@ -118,7 +128,9 @@
         "Debugged and optimized existing code.",
         "Gained hands-on experience with modern web development practices."
       ],
-      "skills": ["JavaScript", "AngularJS"]
+      "skills": ["JavaScript", "AngularJS"],
+      "company_image": "assets/selise_logo.jpg",
+      "company_website": "https://selisegroup.com"
     }
   ],
   "skills": [

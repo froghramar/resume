@@ -162,9 +162,18 @@
         {% for exp in experience %}
         <div class="exp-card">
             <div style="display:flex; align-items:center; justify-content:space-between;">
-                <div>
+                <div style="display:flex; align-items:center; gap:12px;">
+                    {% if exp.company_image %}
+                    <img src="{{ exp.company_image }}" alt="{{ exp.company }} logo" style="width:32px;height:32px;border-radius:6px;object-fit:contain;background:#fff;border:1px solid #e3eaf3;box-shadow:0 1px 4px rgba(42,122,226,0.08);">
+                    {% endif %}
                     <span class="exp-title">{{ exp.title }}</span>
-                    <span class="exp-company">@ {{ exp.company }}</span>
+                    <span class="exp-company">@ 
+                        {% if exp.company_website %}
+                        <a href="{{ exp.company_website }}" target="_blank">{{ exp.company }}</a>
+                        {% else %}
+                        {{ exp.company }}
+                        {% endif %}
+                    </span>
                     {% if exp.location %}<span class="exp-location">, {{ exp.location }}</span>{% endif %}
                 </div>
                 <div class="exp-dates">{{ exp.start }} – {{ exp.end }}</div>

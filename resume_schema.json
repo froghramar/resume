@@ -48,7 +48,9 @@
           "skills": {
             "type": "array",
             "items": { "type": "string" }
-          }
+          },
+          "company_image": { "type": "string" },
+          "company_website": { "type": ["string", "null"] }
         }
       }
     },
