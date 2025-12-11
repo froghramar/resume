@@ -10,6 +10,14 @@
         &nbsp;•&nbsp;{% if years > 0 %}{{ years }} year{% if years != 1 %}s{% endif %}{% endif %}{% if months > 0 %}{% if years > 0 %} {% endif %}{{ months }} month{% if months > 1 %}s{% endif %}{% endif %}
     {% endif %}
 {% endmacro %}
+{% macro format_date(date_str) %}
+    {% set months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'] %}
+    {% if date_str %}
+        {% set year = date_str.split('-')[0] %}
+        {% set month = date_str.split('-')[1] | int %}
+        {{ months[month-1] }} {{ year }}
+    {% endif %}
+{% endmacro %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -287,7 +295,7 @@
                         <div {% if not loop.last %}class="exp-role-content-bordered"{% endif %}>
                             <div style="color:#888; font-size:0.95em; margin-bottom:2px;">
                                 <span class="exp-dates">
-                                    {{ role.start }} – {{ role.end }}{{ format_duration(role.start, role.end) }}
+                                    {{ format_date(role.start) }} – {{ format_date(role.end) }}{{ format_duration(role.start, role.end) }}
                                 </span>
                             </div>
                             {% if role.location %}<div class="exp-location">{{ role.location }}</div>{% endif %}
@@ -327,7 +335,7 @@
                         {% endif %}
                     </span>
                     <span style="color:#888; font-size:0.95em; margin-bottom:2px;">
-                        {{ exp.start }} – {{ exp.end }}{{ format_duration(exp.start, exp.end) }}
+                        {{ format_date(exp.start) }} – {{ format_date(exp.end) }}{{ format_duration(exp.start, exp.end) }}
                     </span>
                     {% if exp.location %}
                     <span class="exp-location" style="margin-top:2px; color:#888;">{{ exp.location }}</span>
