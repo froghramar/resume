@@ -4,13 +4,16 @@
   "required": ["name", "contact", "summary", "education", "experience", "skills"],
   "properties": {
     "name": { "type": "string" },
+    "headline": { "type": "string" },
+    "profile_picture": { "type": "string" },
     "contact": {
       "type": "object",
       "required": ["email", "phone", "address"],
       "properties": {
         "email": { "type": "string", "format": "email" },
         "phone": { "type": "string" },
-        "address": { "type": "string" }
+        "address": { "type": "string" },
+        "linkedin": { "type": "string" }
       }
     },
     "summary": { "type": "string" },
@@ -34,15 +37,50 @@
         "properties": {
           "title": { "type": "string" },
           "company": { "type": "string" },
+          "location": { "type": "string" },
           "start": { "type": "string" },
           "end": { "type": "string" },
-          "description": { "type": "string" }
+          "description": { "type": "string" },
+          "highlights": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "skills": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
         }
       }
     },
     "skills": {
       "type": "array",
       "items": { "type": "string" }
+    },
+    "certifications": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "issuer", "year"],
+        "properties": {
+          "name": { "type": "string" },
+          "issuer": { "type": "string" },
+          "year": { "type": "string" },
+          "expires": { "type": "string" }
+        }
+      }
+    },
+    "volunteer": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["role", "organization", "year", "description"],
+        "properties": {
+          "role": { "type": "string" },
+          "organization": { "type": "string" },
+          "year": { "type": "string" },
+          "description": { "type": "string" }
+        }
+      }
     }
   }
 }

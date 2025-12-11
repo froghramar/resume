@@ -1,37 +1,14 @@
 {
   "name": "Feroz Ahmmed",
-  "profile_picture": "profile.jpg",
   "headline": "Senior Software Engineer | Building High-Performance Web Applications with .NET Core & Azure | 3x Microsoft Certified",
+  "profile_picture": "profile.jpg",
   "contact": {
     "email": "froghramar@gmail.com",
-    "phone": "+880-152-1498748",
+    "phone": "+880-1521-498748",
     "address": "Thakurgaon, Rangpur Division, Bangladesh",
-    "website": "https://feroz.dev",
     "linkedin": "https://linkedin.com/in/froghramar"
   },
   "summary": "I'm a seasoned web application developer with a proven track record of delivering high-impact solutions across the entire technology stack. I specialize in .NET Core and C# development, with deep expertise in building scalable microservices using modern architectural patterns. My commitment to excellence is backed by formal education from the University of Dhaka and industry-recognized Microsoft certifications. I thrive in fast-paced environments where I can make an immediate impact, mentor others, and continuously push the boundaries of what's possible with modern cloud technologies.",
-  "open_to_work": [
-    "Dotnet Developer",
-    "Senior Dotnet Developer",
-    ".NET Engineer",
-    ".NET Developer"
-  ],
-  "open_to_volunteer": [
-    "Child Welfare",
-    "Disaster and Humanitarian Relief",
-    "Economic Empowerment",
-    "Education",
-    "Environmental Sustainability",
-    "Health - General and Rehabilitative",
-    "Human Rights",
-    "Poverty Alleviation",
-    "Science and Technology"
-  ],
-  "analytics": {
-    "profile_views": 97,
-    "post_impressions": 144,
-    "search_appearances": 7
-  },
   "education": [
     {
       "degree": "Bachelor of Science in Software Engineering",
@@ -165,34 +142,12 @@
       "year": "2021"
     }
   ],
-  "languages": [
-    {"language": "Bengali", "proficiency": "Native or bilingual"},
-    {"language": "English", "proficiency": "Professional"},
-    {"language": "Arabic", "proficiency": "Elementary"}
-  ],
   "volunteer": [
     {
       "role": "IT Secretary",
       "organization": "IIT Software Engineers' Community",
       "year": "2017-2018",
       "description": "Collaborated with software industry of Bangladesh by merging academic excellence with industrial career success."
-    }
-  ],
-  "featured": [
-    {
-      "type": "link",
-      "title": "I Built an AI Agent That Actually Searches LinkedIn Jobs For You (And It’s Open Source!)",
-      "url": "https://feroz.dev/ai-agent-linkedin-jobs"
-    },
-    {
-      "type": "link",
-      "title": "How I get into toptal!",
-      "url": "https://feroz.dev/how-i-got-into-toptal"
-    },
-    {
-      "type": "link",
-      "title": "What is it like working at Toptal as a freelancer",
-      "url": "https://feroz.dev/working-at-toptal"
     }
   ]
 }
