@@ -1,4 +1,3 @@
-
 import json
 import sys
 from jsonschema import validate, ValidationError
