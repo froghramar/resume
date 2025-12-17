@@ -12,6 +12,7 @@
       "properties": {
         "email": { "type": "string", "format": "email" },
         "phone": { "type": "string" },
+        "phone_secondary": { "type": "string" },
         "address": { "type": "string" },
         "linkedin": { "type": "string" }
       }
