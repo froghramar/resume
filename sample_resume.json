@@ -34,6 +34,24 @@
   ],
   "experience": [
     {
+      "title": "Full Stack Developer",
+      "company": "Duotronic",
+      "location": "Dhaka, Bangladesh (Remote)",
+      "employment_type": "Full-time",
+      "start": "2025-12",
+      "end": "2026-04",
+      "description": "Develops a full-stack TypeScript platform for branchable cloud infrastructure and automated orchestration using Node.js and Koa.js.",
+      "highlights": [
+        "Developed a full-stack TypeScript platform for branchable cloud infrastructure, enabling Git-based version control for entire application environments.",
+        "Engineered scalable multi-tenant backend services and orchestration layers using a modern Node.js and Koa.js stack.",
+        "Built high-performance web systems and interactive interfaces to manage and deliver structured application data efficiently.",
+        "Architected a unified CLI and API control plane to automate complex deployment workflows and streamline system management."
+      ],
+      "skills": ["Node.js", "Koa.js", "TypeScript", "React", "PostgreSQL"],
+      "company_image": "assets/duotronic_logo.jpeg",
+      "company_website": "https://duotronic.ai"
+    },
+    {
       "title": ".NET Developer",
       "company": "Toptal",
       "location": "Chicago, Illinois, United States (Remote)",
